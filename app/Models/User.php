@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'photo',
+        'piva',
+        'address'
     ];
 
     /**
@@ -41,4 +44,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function restourant_tipologies(){
+        return $this->belongsTo(Typology::class);
+    }
+
+    public function dishes(){
+        return $this->belongsTo(Dish::class);
+    }
+
+    public function orders(){
+        return $this->belongsTo(Order::class);
+    }
 }

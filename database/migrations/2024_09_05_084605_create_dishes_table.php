@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('description');
             $table->decimal('price');
             $table->boolean('visible');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

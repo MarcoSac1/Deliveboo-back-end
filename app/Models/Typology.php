@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Typology extends Model
 {
     use HasFactory;
+
+    protected $fillable =[
+        'name'
+    ];
+
+    public function restourant_typology(){
+        return $this->belongsToMany(Restourant_Typology::class);
+    }
 }

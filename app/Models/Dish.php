@@ -8,7 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Dish extends Model
 {
     use HasFactory;
-    public function dishes(){
-        return $this->hasMany(Dish::class);
+
+    protected $fillable =[
+        'user_id',
+        'name',
+        'photo',
+        'description',
+        'price',
+        'visible'
+    ];
+
+    public function users(){
+        return $this->hasMany(User::class);
     }
 }

@@ -16,6 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('typology_id');
             $table->unsignedBigInteger('user_id');
+            //
+            $table->foreign('typology_id')->references('id')->on('typologies')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+
         });
     }
 
@@ -25,5 +29,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('restourant__typologies');
+        // $table->dropForeign('restourant_typologies_typology_id_foreign');
     }
 };
