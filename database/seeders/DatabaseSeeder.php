@@ -58,5 +58,9 @@ class DatabaseSeeder extends Seeder
         }
          // Aggiungi qui la chiamata al seeder per i piatti
         $this->call(DishSeeder::class);
+        $this->call(OrderDishSeeder::class);
+        $this->call(OrderSeeder::class);
+        $this->call(RestourantTypologySeeder::class);
+        $this->call(TypologySeeder::class);
     }
 }
