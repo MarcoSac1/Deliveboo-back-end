@@ -14,34 +14,53 @@ class TypologySeeder extends Seeder
     {
         $restaurantTypes = [
             [
-                'id' => 1,
-                'name' => 'Pizzeria',
+                'id' => 7,
+                'name' => 'Ristorante vegetariano',
                 'timestamps' => now(),
             ],
             [
-                'id' => 2,
-                'name' => 'Trattoria',
+                'id' => 8,
+                'name' => 'Tavola calda',
                 'timestamps' => now(),
             ],
             [
-                'id' => 3,
-                'name' => 'Ristorante di pesce',
+                'id' => 9,
+                'name' => 'Caffetteria',
                 'timestamps' => now(),
             ],
             [
-                'id' => 4,
-                'name' => 'Steakhouse',
-                'timestamps' => now(),
-
-            ],
-            [
-                'id' => 5,
-                'name' => 'Fast Food',
+                'id' => 10,
+                'name' => 'Bistrot',
                 'timestamps' => now(),
             ],
             [
-                'id' => 6,
-                'name' => 'Sushi Bar',
+                'id' => 11,
+                'name' => 'Ristorante Messicano',
+                'timestamps' => now(),
+            ],
+            [
+                'id' => 12,
+                'name' => 'Ristorante Indiano',
+                'timestamps' => now(),
+            ],
+            [
+                'id' => 13,
+                'name' => 'Ristorante Cinese',
+                'timestamps' => now(),
+            ],
+            [
+                'id' => 14,
+                'name' => 'Ristorante Libanese',
+                'timestamps' => now(),
+            ],
+            [
+                'id' => 15,
+                'name' => 'Pub',
+                'timestamps' => now(),
+            ],
+            [
+                'id' => 16,
+                'name' => 'Enoteca',
                 'timestamps' => now(),
             ],
         ];
