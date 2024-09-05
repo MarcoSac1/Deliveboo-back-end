@@ -57,6 +57,12 @@ class DatabaseSeeder extends Seeder
             $user->save();
         }
          // Aggiungi qui la chiamata al seeder per i piatti
-        $this->call(DishSeeder::class);
+        $this->call([
+            DishSeeder::class,
+            OrderDishSeeder::class,
+            OrderSeeder::class,
+            RestourantTypologySeeder::class,
+            TypologySeeder::class
+            ]);
     }
 }
