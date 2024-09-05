@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('typologies', function (Blueprint $table) {
+        Schema::create('restourant__typologies', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->unsignedBigInteger('typology_id');
+            $table->unsignedBigInteger('user_id');
         });
     }
 
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('typologies');
+        Schema::dropIfExists('restourant__typologies');
     }
 };
