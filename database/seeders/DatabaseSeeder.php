@@ -56,5 +56,7 @@ class DatabaseSeeder extends Seeder
             $user ->photo = $userData['photo'];
             $user->save();
         }
+         // Aggiungi qui la chiamata al seeder per i piatti
+        $this->call(DishSeeder::class);
     }
 }
