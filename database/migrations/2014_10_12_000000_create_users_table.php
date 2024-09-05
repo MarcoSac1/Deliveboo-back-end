@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->text('photo');
             $table->unsignedBigInteger('piva');
-            $table->string('address');
+            $table->string('adress');
             $table->rememberToken();
             $table->timestamps();
         });
