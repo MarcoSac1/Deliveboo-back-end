@@ -13,12 +13,11 @@ public function run(): void{
     $users = User::all();
     $typologies = Typology::all();
 
- 5-creation-of-restourahttypologyseeder-array
         $users[0]->typologies()->attach($typologies[8]);
         $users[2]->typologies()->attach($typologies[8]);
         $users[3]->typologies()->attach($typologies[8]);
         $users[1]->typologies()->attach($typologies[8]);
         $users[1]->typologies()->attach($typologies[8]);
         $users[1]->typologies()->attach($typologies[8]);
-       }
+    }
 }
