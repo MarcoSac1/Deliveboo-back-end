@@ -62,16 +62,12 @@ class DatabaseSeeder extends Seeder
             $user->save();
         }
          // Aggiungi qui la chiamata al seeder per i piatti
- Dev-Ciro
         $this->call([
             DishSeeder::class,
             OrderDishSeeder::class,
             OrderSeeder::class,
             RestourantTypologySeeder::class,
             TypologySeeder::class
-            ]);
-
-      
-      
+        ]);
     }
 }
