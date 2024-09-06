@@ -47,8 +47,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function restourant_tipologies(){
-        return $this->belongsToMany(Typology::class , 'restourant_typologies');
+    public function typologies()
+    {
+        return $this->belongsToMany(Typology::class, 'restourant_typologies', 'user_id', 'typology_id');
     }
 
     public function dishes(){

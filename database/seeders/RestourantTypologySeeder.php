@@ -8,23 +8,16 @@ use App\Models\Typology;
 use App\Models\User;
 class RestourantTypologySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run(): void
-    {
-        $users = User::all();
-        $typologies = Typology::all();
+    /**Run the database seeds.*/
+public function run(): void{
+    $users = User::all();
+    $typologies = Typology::all();
 
-        foreach($users as $userData) {
-            $user = new User();
-            $user->user_id = $userData['user_id'];
-            $user->save();
-        }
-        foreach($typologies as $typologyData) {
-            $typologies = new Typology();
-            $typologies->typology_id = $typologyData['typology_id'];
-            $typologies->save();
-        }
+        $users[0]->typologies()->attach($typologies[0]);
+        $users[2]->typologies()->attach($typologies[1]);
+        $users[3]->typologies()->attach($typologies[2]);
+        $users[1]->typologies()->attach($typologies[3]);
+        $users[1]->typologies()->attach($typologies[4]);
+        $users[1]->typologies()->attach($typologies[5]);
     }
 }
