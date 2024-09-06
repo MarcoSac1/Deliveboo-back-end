@@ -62,18 +62,16 @@ class DatabaseSeeder extends Seeder
             $user->save();
         }
          // Aggiungi qui la chiamata al seeder per i piatti
-        // $this->call(DishSeeder::class);
-        // $this->call(OrderDishSeeder::class);
-        // $this->call(OrderSeeder::class);
-        // $this->call(RestourantTypologySeeder::class);
-        // $this->call(TypologySeeder::class);
-
+ Dev-Ciro
         $this->call([
             DishSeeder::class,
-            TypologySeeder::class,
-            OrderSeeder::class,
             OrderDishSeeder::class,
+            OrderSeeder::class,
             RestourantTypologySeeder::class,
-        ]);
+            TypologySeeder::class
+            ]);
+
+      
+      
     }
 }
