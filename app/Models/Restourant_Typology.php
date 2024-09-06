@@ -14,11 +14,11 @@ class Restourant_Typology extends Model
     //     'user_id'
     // ];
 
-    // public function user(){
-    //     return $this->belongsToMany(User::class);
-    // }
+     public function user(){
+         return $this->belongsToMany(User::class);
+     }
 
-    // public function typology(){
-    //     return $this->belongsToMany(Typology::class);
-    // }
+     public function typology(){
+         return $this->belongsToMany(Typology::class);
+     }
 }

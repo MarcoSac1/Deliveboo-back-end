@@ -52,26 +52,25 @@ class DatabaseSeeder extends Seeder
 
 
         foreach($userNames as $userData) {
-            $user = new User();
-            $user ->name = $userData['username'];
-            $user ->email = $userData['email'];
-            $user ->password = bcrypt($userData['password']);
-            $user ->piva = $userData['piva'];
-            $user ->adress = $userData['adress'];
-            $user ->photo = $userData['photo'];
-            $user->save();
+            $users = new User();
+            $users ->name = $userData['username'];
+            $users ->email = $userData['email'];
+            $users ->password = bcrypt($userData['password']);
+            $users ->piva = $userData['piva'];
+            $users ->adress = $userData['adress'];
+            $users ->photo = $userData['photo'];
+            $users->save();
         }
          // Aggiungi qui la chiamata al seeder per i piatti
- Dev-Ciro
         $this->call([
             DishSeeder::class,
-            OrderDishSeeder::class,
             OrderSeeder::class,
+            TypologySeeder::class,
             RestourantTypologySeeder::class,
-            TypologySeeder::class
+            OrderDishSeeder::class
             ]);
 
-      
-      
+
+
     }
 }
