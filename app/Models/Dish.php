@@ -19,6 +19,10 @@ class Dish extends Model
     ];
 
     public function users(){
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class , 'user_id')
+        ->withPivot('quantity');
+    }
+    public function orders(){
+        return $this->belongsToMany(Order::class, 'order_dish');
     }
 }

@@ -14,6 +14,6 @@ class Typology extends Model
     ];
 
     public function restourant_typology(){
-        return $this->belongsToMany(Restourant_Typology::class);
+        return $this->belongsToMany(Restourant_Typology::class, 'restourant_typology');
     }
 }
