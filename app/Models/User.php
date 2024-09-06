@@ -46,14 +46,14 @@ class User extends Authenticatable
     ];
 
     public function restourant_tipologies(){
-        return $this->belongsTo(Typology::class);
+        return $this->belongsToMany(Typology::class , 'restourant_typology');
     }
 
     public function dishes(){
-        return $this->belongsTo(Dish::class);
+        return $this->hasMany(Dish::class, 'user_id');
     }
 
     public function orders(){
-        return $this->belongsTo(Order::class);
+        return $this->HasMany(Order::class);
     }
 }
