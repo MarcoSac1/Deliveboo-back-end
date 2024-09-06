@@ -16,16 +16,15 @@ class RestourantTypologySeeder extends Seeder
         $users = User::all();
         $typologies = Typology::all();
 
-        // foreach($users as $userData) {
-        //     $user = new User();
-        //     $user->user_id = $userData['user_id'];
-        //     $user->save();
-        // }
-        // foreach($typologies as $typologyData) {
-        //     $typologies = new Typology();
-        //     $typologies->typology_id = $typologyData['typology_id'];
-        //     $typologies->save();
-        // }
+        foreach($users as $userData) {
+            $user = new User();
+            $user->user_id = $userData['user_id'];
+            $user->save();
+        }
+        foreach($typologies as $typologyData) {
+            $typologies = new Typology();
+            $typologies->typology_id = $typologyData['typology_id'];
+            $typologies->save();
+        }
     }
 }
-
