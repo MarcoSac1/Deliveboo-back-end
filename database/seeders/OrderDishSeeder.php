@@ -9,69 +9,75 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class OrderDishSeeder extends Seeder
-{
-    /**
-     * Run the database seeds.
-     */
+    {
     public function run(): void
     {
-        $dish = Dish::first();
-        $order = Order::first();
+        // Ottieni tutte le istanze di Dish e Order
+        $dishes = Dish::all();
+        $orders = Order::all();
+
+        // Assicurati che ci siano elementi nella collezione
+        if ($dishes->isEmpty() || $orders->isEmpty()) {
+            return;
+        }
+
+        // Genera dati di esempio
         $orderDishes = [
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 5,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 3,
             ],
-
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 1,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 2,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 5,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 2,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 6,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 9,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 3,
             ],
             [
-                'dish_id' => $dish->id,
-                'order_id' => $order->id,
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
                 'quantity' => 2,
             ],
         ];
 
+
         foreach($orderDishes as $orderDish) {
+           main
             Order_Dish::create($orderDish);
         }
     }

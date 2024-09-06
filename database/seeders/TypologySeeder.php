@@ -15,53 +15,43 @@ class TypologySeeder extends Seeder
         $restaurantTypes = [
             [
                 'id' => 7,
-                'name' => 'Ristorante vegetariano',
-                'timestamps' => now(),
+                'name' => 'Ristorante vegetariano'
             ],
             [
                 'id' => 8,
-                'name' => 'Tavola calda',
-                'timestamps' => now(),
+                'name' => 'Tavola calda'
             ],
             [
                 'id' => 9,
-                'name' => 'Caffetteria',
-                'timestamps' => now(),
+                'name' => 'Caffetteria'
             ],
             [
                 'id' => 10,
-                'name' => 'Bistrot',
-                'timestamps' => now(),
+                'name' => 'Bistrot'
             ],
             [
                 'id' => 11,
-                'name' => 'Ristorante Messicano',
-                'timestamps' => now(),
+                'name' => 'Ristorante Messicano'
             ],
             [
                 'id' => 12,
-                'name' => 'Ristorante Indiano',
-                'timestamps' => now(),
+                'name' => 'Ristorante Indiano'
             ],
             [
                 'id' => 13,
-                'name' => 'Ristorante Cinese',
-                'timestamps' => now(),
+                'name' => 'Ristorante Cinese'
             ],
             [
                 'id' => 14,
-                'name' => 'Ristorante Libanese',
-                'timestamps' => now(),
+                'name' => 'Ristorante Libanese'
             ],
             [
                 'id' => 15,
-                'name' => 'Pub',
-                'timestamps' => now(),
+                'name' => 'Pub'
             ],
             [
                 'id' => 16,
-                'name' => 'Enoteca',
-                'timestamps' => now(),
+                'name' => 'Enoteca'
             ],
         ];
 
@@ -69,7 +59,6 @@ class TypologySeeder extends Seeder
             $typology = new Typology();
             $typology ->id = $restaurantType['id'];
             $typology ->name = $restaurantType['name'];
-            $typology ->timestamps= $restaurantType['timestamps'];
             $typology ->save();
         }
     }

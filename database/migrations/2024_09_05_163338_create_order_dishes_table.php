@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('order__dishes', function (Blueprint $table) {
+        Schema::create('order_dishes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('dish_id');
             $table->unsignedBigInteger('order_id');
             $table->unsignedBigInteger('quantity');
+            //Chiave esterna
             $table->foreign('dish_id')->references('id')->on('dishes')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade')->onUpdate('cascade');
 
