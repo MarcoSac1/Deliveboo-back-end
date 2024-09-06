@@ -10,6 +10,9 @@
                 <h5 class="card-title">{{ $dish->name }}</h5>
                 <p class="card-text"><p>{{ $dish->description }}</p></p>
                 <p>{{ $dish->price }}</p>
+                <a href="{{ route('admin.dishes.show', $dish->id) }}" class="btn btn-primary">View</a>
+                <a href="{{ route('admin.dishes.edit', $dish->id) }}" class="btn btn-warning">Edit</a>
+
             </div>
         </div>
         @endforeach
