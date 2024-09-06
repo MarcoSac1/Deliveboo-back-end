@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
 
-
+Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.index');
 Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
         //Rotte protette
     // Route::get('secret-home', [AdminHomeController::class, 'index'])->name('home');
