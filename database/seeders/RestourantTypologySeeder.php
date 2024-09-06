@@ -12,12 +12,12 @@ class RestourantTypologySeeder extends Seeder
 public function run(): void{
     $users = User::all();
     $typologies = Typology::all();
+    $now = now();
 
-        $users[0]->typologies()->attach($typologies[0]);
-        $users[2]->typologies()->attach($typologies[1]);
-        $users[3]->typologies()->attach($typologies[2]);
-        $users[1]->typologies()->attach($typologies[3]);
-        $users[1]->typologies()->attach($typologies[4]);
-        $users[1]->typologies()->attach($typologies[5]);
+    $users[0]->typologies()->attach($typologies[8]->id, ['created_at' => $now, 'updated_at' => $now]);
+    $users[2]->typologies()->attach($typologies[8]->id, ['created_at' => $now, 'updated_at' => $now]);
+    $users[3]->typologies()->attach($typologies[8]->id, ['created_at' => $now, 'updated_at' => $now]);
+    $users[1]->typologies()->attach($typologies[8]->id, ['created_at' => $now, 'updated_at' => $now]);
+
     }
 }
