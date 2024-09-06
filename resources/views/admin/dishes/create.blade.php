@@ -3,7 +3,7 @@
 <div>
     <h1 class="text-align-center">Create a New Dish</h1>
 
-    <form action="{{ route('dishes.store') }}" method="POST">
+    <form action="{{ route('admin.dishes.store') }}" method="POST">
         @csrf
         <div class="form-group">
             <label for="name">Name</label>

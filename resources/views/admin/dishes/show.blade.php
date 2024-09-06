@@ -13,6 +13,11 @@
 
             <a href="{{ route('admin.dishes.edit', $dish->id) }}" class="btn btn-warning">Edit</a>
             <a href="{{ route('admin.dishes.index') }}" class="btn btn-secondary mt-3">Go Back</a>
+            <form action="{{ route('admin.dishes.destroy', $dish->id) }}" method="POST" style="display: inline-block;">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this dish?')">Delete</button>
+            </form>
         </div>
     </div>
 </div>
