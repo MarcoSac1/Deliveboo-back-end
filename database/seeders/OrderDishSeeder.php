@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Order;
 use App\Models\Dish;
 use App\Models\Order_Dish;
+use App\Models\Order;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -72,7 +72,7 @@ class OrderDishSeeder extends Seeder
         ];
 
         foreach($orderDishes as $orderDish) {
-            Dish::create($orderDish);
+            Order_Dish::create($orderDish);
         }
     }
 }
