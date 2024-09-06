@@ -22,7 +22,8 @@ class Dish extends Model
         return $this->belongsTo(User::class , 'user_id')
         ->withPivot('quantity');
     }
-    public function orders(){
-        return $this->belongsToMany(Order::class, 'order_dish');
+    public function dishes()
+    {
+        return $this->belongsToMany(Order::class, 'order_dishes', 'dish_id', 'order_id');
     }
 }
