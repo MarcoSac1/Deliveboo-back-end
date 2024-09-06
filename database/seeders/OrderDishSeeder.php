@@ -22,17 +22,58 @@ class OrderDishSeeder extends Seeder
         }
 
         // Genera dati di esempio
-        $orderDishes = [];
-
-        foreach ($dishes as $dish) {
-            foreach ($orders as $order) {
-                $orderDishes[] = [
-                    'dish_id' => $dish->id,
-                    'order_id' => $order->id,
-                    'quantity' => rand(1, 10),  // Puoi personalizzare la logica per generare la quantità
-                ];
-            }
-        }
+        $orderDishes = [
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 5,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 3,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 1,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 2,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 5,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 2,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 6,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 9,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 3,
+            ],
+            [
+                'dish_id' => $dishes->id,
+                'order_id' => $orders->id,
+                'quantity' => 2,
+            ],
+        ];
 
         // Inserisci i dati nel database
         foreach ($orderDishes as $orderDish) {

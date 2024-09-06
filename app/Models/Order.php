@@ -16,6 +16,6 @@ class Order extends Model
     // Relazione molti a molti con i piatti (dishes) tramite la tabella ponte order_dish
     public function dishes()
     {
-        return $this->belongsToMany(Dish::class, 'order_dish');
+        return $this->belongsToMany(Dish::class, 'order_dishes', 'dish_id', 'order_id');
     }
 }

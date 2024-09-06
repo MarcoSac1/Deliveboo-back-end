@@ -69,5 +69,8 @@ class DatabaseSeeder extends Seeder
             RestourantTypologySeeder::class,
             OrderDishSeeder::class
             ]);
+
+
+
     }
 }

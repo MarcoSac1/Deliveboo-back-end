@@ -46,6 +46,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
     public function typologies()
     {
         return $this->belongsToMany(Typology::class, 'restourant_typologies', 'user_id', 'typology_id');

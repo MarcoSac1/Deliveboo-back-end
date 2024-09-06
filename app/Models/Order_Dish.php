@@ -15,11 +15,11 @@ class Order_Dish extends Model
     //     'quantity',
     // ];
 
-    // public function dishes(){
-    //     return $this->belongsToMany(Dish::class);
-    // }
+    public function dishes(){
+        return $this->belongsToMany(Dish::class);
+    }
 
-    // public function orders(){
-    //     return $this->BelongsToMany(Order::class);
-    // }
+    public function orders(){
+        return $this->BelongsToMany(Order::class);
+    }
 }
