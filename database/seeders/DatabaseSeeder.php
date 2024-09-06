@@ -64,10 +64,13 @@ class DatabaseSeeder extends Seeder
          // Aggiungi qui la chiamata al seeder per i piatti
         $this->call([
             DishSeeder::class,
-            OrderDishSeeder::class,
             OrderSeeder::class,
+            TypologySeeder::class,
             RestourantTypologySeeder::class,
             TypologySeeder::class
-        ]);
+            ]);
+
+
+
     }
 }
