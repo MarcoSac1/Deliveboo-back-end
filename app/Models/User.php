@@ -47,7 +47,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-5-creation-of-restourahttypologyseeder-array
     public function typologies()
     {
         return $this->belongsToMany(Typology::class, 'restourant_typologies', 'user_id', 'typology_id');
