@@ -5,6 +5,11 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Dish;
+use App\Models\Order;
+use App\Models\Order_Dish;
+use App\Models\Restourant_Typology;
+use App\Models\Typology;
 
 class DatabaseSeeder extends Seeder
     {
@@ -13,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $userNames = [
             [
                 'username' => 'giovanni',
-                'email' => 'giovanni@example.com',
+                'email' => 'franco@eple.com',
                 'password' => 'gio2024!',
                 'piva' => '12345678901',
                 'adress' => 'Via Roma 10, 00100 Roma',
@@ -21,7 +26,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'username' => 'sara',
-                'email' => 'sara@example.com',
+                'email' => 'sara@mple.com',
                 'password' => 'sara4567#',
                 'piva' => '23456789012',
                 'adress' => 'Corso Milano 20, 20100 Milano',
@@ -29,7 +34,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'username' => 'mario',
-                'email' => 'mario@example.com',
+                'email' => 'mario@le.com',
                 'password' => 'mario890!',
                 'piva' => '34567890123',
                 'adress' => 'Piazza Napoli 5, 80100 Napoli',
@@ -37,7 +42,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'username' => 'laura',
-                'email' => 'laura@example.com',
+                'email' => 'laura@fdfeexample.com',
                 'password' => 'lau1234@',
                 'piva' => '45678901234',
                 'adress' => 'Viale Torino 15, 10100 Torino',
@@ -57,6 +62,7 @@ class DatabaseSeeder extends Seeder
             $user->save();
         }
          // Aggiungi qui la chiamata al seeder per i piatti
+ Dev-Ciro
         $this->call([
             DishSeeder::class,
             OrderDishSeeder::class,
@@ -64,5 +70,8 @@ class DatabaseSeeder extends Seeder
             RestourantTypologySeeder::class,
             TypologySeeder::class
             ]);
+
+      
+      
     }
 }
