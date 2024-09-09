@@ -14,7 +14,7 @@
                         <h5 class="card-title ">Indirizzo: {{ $user->adress }}</h5>
                         P.Iva: {{ $user->piva }} <br>
                 <p class="card-text"> Mail: {{ $user->email }}</p>
-                <a href="{{ route('pages.show', $user) }}" class="btn btn-primary">Restourant details</a>
+                <a href="{{ route('pages.show', $user) }}" class="btn btn btn-success">Restourant details</a>
             </div>
         </div>
         @endforeach
