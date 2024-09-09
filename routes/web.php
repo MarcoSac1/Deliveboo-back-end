@@ -4,8 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\DishController;
-use App\Http\Controllers\HomeController as GuestHomeController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +25,7 @@ Auth::routes();
 Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
 
 Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.index');
+Route::get('/show', [AdminHomeController::class,'show'])->name('pages.show');
 
 Route::get('/create', [AdminHomeController::class,'create'])->name('pages.create');
 Route::post('/restourant', [AdminHomeController::class, 'store'])->name('pages.store');
