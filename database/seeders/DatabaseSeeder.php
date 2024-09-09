@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         $userNames = [
             [
-                'username' => 'ristorante_la_piazza',
+                'username' => 'ristorante  la  piazza',
                 'email' => 'lapiazza@restaurant.com',
                 'password' => 'lapiazza123!',
                 'piva' => '12345678901',
@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38',
             ],
             [
-                'username' => 'bistro_del_mare',
+                'username' => 'bistro  del  mare',
                 'email' => 'bistrodelmare@restaurant.com',
                 'password' => 'bistro456!',
                 'piva' => '23456789012',
@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1504674900247-0877df9cc836',
             ],
             [
-                'username' => 'osteria_vecchia',
+                'username' => 'osteria  vecchia',
                 'email' => 'osteriavecchia@restaurant.com',
                 'password' => 'osteria890!',
                 'piva' => '34567890123',
@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1528605248644-14dd04022da1',
             ],
             [
-                'username' => 'trattoria_al_ponte',
+                'username' => 'trattoria  al  ponte',
                 'email' => 'trattoriaalponte@restaurant.com',
                 'password' => 'trattoria123@',
                 'piva' => '45678901234',
@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0',
             ],
             [
-                'username' => 'gusto_ristorante',
+                'username' => 'gusto  ristorante',
                 'email' => 'gusto@restaurant.com',
                 'password' => 'gusto567!',
                 'piva' => '56789012345',
@@ -57,7 +57,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9',
             ],
             [
-                'username' => 'ristorante_mediterraneo',
+                'username' => 'ristorante  mediterraneo',
                 'email' => 'mediterraneo@restaurant.com',
                 'password' => 'mediterraneo789!',
                 'piva' => '67890123456',
@@ -65,7 +65,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4',
             ],
             [
-                'username' => 'enoteca_vinum',
+                'username' => 'enoteca  vinum',
                 'email' => 'vinum@enoteca.com',
                 'password' => 'vinum890@',
                 'piva' => '78901234567',
@@ -73,23 +73,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1520262494112-9fe481d36ec3',
             ],
             [
-                'username' => 'pizzeria_napoli_bella',
-                'email' => 'napolibella@pizzeria.com',
-                'password' => 'napolibella123!',
-                'piva' => '89012345678',
-                'adress' => 'Via Napoli 18, 80100 Napoli',
-                'photo' => 'https://images.unsplash.com/photo-1572294450056-d5b86c0e9589',
-            ],
-            [
-                'username' => 'steakhouse_la_griglia',
-                'email' => 'lagriglia@steakhouse.com',
-                'password' => 'lagriglia456!',
-                'piva' => '90123456789',
-                'adress' => 'Viale della Libertà 25, 10100 Torino',
-                'photo' => 'https://images.unsplash.com/photo-1529692236671-f1b9fbf0ee8d',
-            ],
-            [
-                'username' => 'sushi_zen',
+                'username' => 'sushi  zen',
                 'email' => 'zen@sushi.com',
                 'password' => 'zen789@',
                 'piva' => '01234567890',
@@ -97,7 +81,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1553621042-f6e147245754',
             ],
             [
-                'username' => 'trattoria_della_nonna',
+                'username' => 'trattoria  della  nonna',
                 'email' => 'dellanonna@trattoria.com',
                 'password' => 'nonna123!',
                 'piva' => '12345678902',
@@ -105,7 +89,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1562059390-a761a084768e',
             ],
             [
-                'username' => 'pasta_italiana',
+                'username' => 'pasta  italiana',
                 'email' => 'pasta@restaurant.com',
                 'password' => 'pasta456!',
                 'piva' => '23456789013',
@@ -113,7 +97,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1504674900247-0877df9cc836',
             ],
             [
-                'username' => 'ristorante_da_michele',
+                'username' => 'ristorante  da  michele',
                 'email' => 'damichele@restaurant.com',
                 'password' => 'michele890!',
                 'piva' => '34567890124',
@@ -121,7 +105,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092',
             ],
             [
-                'username' => 'ristorante_fiorentina',
+                'username' => 'ristorante  fiorentina',
                 'email' => 'fiorentina@restaurant.com',
                 'password' => 'fiorentina123@',
                 'piva' => '45678901235',
@@ -129,31 +113,7 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
             ],
             [
-                'username' => 'bistrot_venezia',
-                'email' => 'venezia@bistrot.com',
-                'password' => 'venezia567!',
-                'piva' => '56789012346',
-                'adress' => 'Calle Larga 15, 30100 Venezia',
-                'photo' => 'https://images.unsplash.com/photo-1598511726372-c271edc9bb2e',
-            ],
-            [
-                'username' => 'ristorante_portofino',
-                'email' => 'portofino@restaurant.com',
-                'password' => 'portofino789!',
-                'piva' => '67890123457',
-                'adress' => 'Via del Mare 20, 16034 Portofino',
-                'photo' => 'https://images.unsplash.com/photo-1598511726372-c271edc9bb2e',
-            ],
-            [
-                'username' => 'sapore_di_mare',
-                'email' => 'saporedimare@restaurant.com',
-                'password' => 'sapore890@',
-                'piva' => '78901234568',
-                'adress' => 'Lungomare 18, 80100 Napoli',
-                'photo' => 'https://images.unsplash.com/photo-1522618559449-fd93fd8738e3',
-            ],
-            [
-                'username' => 'taverna_greca',
+                'username' => 'taverna  greca',
                 'email' => 'taverna@restaurant.com',
                 'password' => 'greca123!',
                 'piva' => '89012345679',
@@ -161,20 +121,12 @@ class DatabaseSeeder extends Seeder
                 'photo' => 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4',
             ],
             [
-                'username' => 'trattoria_del_corso',
+                'username' => 'trattoria  del  corso',
                 'email' => 'delcorso@restaurant.com',
                 'password' => 'delcorso456!',
                 'piva' => '90123456780',
                 'adress' => 'Via del Corso 22, 00100 Roma',
                 'photo' => 'https://images.unsplash.com/photo-1504674900247-0877df9cc836',
-            ],
-            [
-                'username' => 'pizzeria_da_gigi',
-                'email' => 'dagigi@pizzeria.com',
-                'password' => 'gigi789!',
-                'piva' => '01234567891',
-                'adress' => 'Piazza Duomo 10, 20100 Milano',
-                'photo' => 'https://images.unsplash.com/photo-1572294450056-d5b86c0e9589',
             ],
         ];
 
