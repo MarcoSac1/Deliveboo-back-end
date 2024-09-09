@@ -44,10 +44,10 @@
                         <input class="form-control form-control-sm mb-2" type="number" placeholder="Piva" aria-label="piva" id="piva" name="piva" value="{{ old('piva') }}">
                     </div>
 
-                <div class="mb-3">
-                    <label for="Adress">Adress</label>
-                    <input class="form-control form-control-sm mb-2" type="text" placeholder="Adress" aria-label="Adress" id="adress" name="adress" value="{{ old('adress') }}">
-                </div>
+                    <div class="mb-3">
+                        <label for="Adress">Adress</label>
+                        <input class="form-control form-control-sm mb-2" type="text" placeholder="Adress" aria-label="Adress" id="adress" name="adress" value="{{ old('adress') }}">
+                    </div>
 
                 @foreach($typologies as $typology)
                     <div class="form-check">

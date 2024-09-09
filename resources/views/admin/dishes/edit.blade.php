@@ -36,7 +36,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary mt-3">Update Dish</button>
+            <button type="submit" class="btn btn-success mt-3">Update Dish</button>
         </form>
     </div>
 </div>
