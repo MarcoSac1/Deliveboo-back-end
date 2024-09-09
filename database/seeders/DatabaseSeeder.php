@@ -67,10 +67,7 @@ class DatabaseSeeder extends Seeder
             OrderSeeder::class,
             TypologySeeder::class,
             RestourantTypologySeeder::class,
-            OrderDishSeeder::class
+            TypologySeeder::class
             ]);
-
-
-
     }
 }
