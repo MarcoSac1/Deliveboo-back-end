@@ -9,9 +9,9 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class OrderDishSeeder extends Seeder
-    {
-    public function run(): void
-    {
+{
+
+    public function run(): void{
         // Ottieni tutte le istanze di Dish e Order
         $dishes = Dish::all();
         $orders = Order::all();
@@ -70,9 +70,17 @@ class OrderDishSeeder extends Seeder
             ],
         ];
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> cf2f21cd1255199dfa7488c1c8b950c476f3461e
         // Inserisci i dati nel database
         foreach ($orderDishes as $orderDish) {
             Order_Dish::create($orderDish);
         }
     }
+
+
 }
