@@ -24,9 +24,8 @@ Auth::routes();
 
 Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
 
-Route::get('restourant', [AdminHomeController::class,'index'])->name('pages.index');
-Route::get('show', [AdminHomeController::class,'show'])->name('pages.show');
-Route::get('create', [AdminHomeController::class,'create'])->name('pages.create');
+Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.index');
+Route::get('/show/{user}', [AdminHomeController::class,'show'])->name('pages.show');
 
 
 Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){

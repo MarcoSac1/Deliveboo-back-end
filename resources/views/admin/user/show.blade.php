@@ -1,29 +1,18 @@
 @extends('layouts.app')
 @section('page-title')
-Showing {{ $users->name }}
+Showing {{ $user->name }}
 @endsection
 @section('main-section')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-8 p-3">
-            <h2>{{  $users->username }}</h2>
-            {{-- @if ( $users->adress)
-                <h2 class="d-inline-block px-3 rounded" style='background:{{$users->category->color}}'> {{  $users->category->name }}</h2>
-            @endif --}}
-            <div class="image">
-                <img src="{{  $users->photo }}" class="img-fluid" alt="img">
-            </div>
-            <h4>{{ $users->piva}}</h4>
-            <p>{{ $users->email}}</p>
-            <div class="card-footer">
-                <a href="{{ route('pages.index', $users) }}" class="btn btn-primary">Back To Restourant</a>
-                {{-- <a href="{{route ('admin.user.edit', $users)}}" class="btn btn-success btn-sm">Edit</a> --}}
-                {{-- <form action="{{route ('admin.user.destroy', $users)}}" method="POST" class="d-inline-block form-destroyer" data-post-title='{{$users->name }}'>
-                    @method('delete')
-                    @csrf --}}
-
-                    <input type="submit" class="btn btn-warning btn-sm" value="delete"></input>
-                </form>
+            <h1 class="card-header">{{ $user->username}}</h1>
+            <div class="card-body">
+                <p class="card-text"> foto: {{ $user->photo }} </p>
+                <h5 class="card-title ">Indirizzo: {{ $user->adress }}</h5>
+                <p>P.Iva: {{ $user->piva }}</p>
+                <p>Mail: {{ $user->email }}</p>
+                <a href="{{ route('pages.show', $user) }}" class="btn btn-primary">Restourant details</a>
             </div>
         </div>
     </div>
