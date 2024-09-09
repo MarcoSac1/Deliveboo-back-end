@@ -1,12 +1,11 @@
 @extends('layouts.app')
 @section('main-section')
 <div>
-    <h1 class="text-align-center">Dishes</h1>
-    <a href="{{ route('admin.dishes.create') }}" class="btn btn-primary">Create</a>
-    <section class="cards d-flex flex-wrap" style="width: calc(100 / 3);">
+    <h1 class="text-align-center text-center">Dishes</h1>
+    <section class="cards d-flex flex-wrap justify-content-around " style="width: calc(100 / 6); ">
     @foreach ($dishes as $dish )
-        <div class="card" style="width: 18rem;">
-            <img class=" immagine w-100 align-self-center" src="{{ $dish->photo }}" alt="{{ $dish->name }}">
+        <div class="card m-2 d-flex " style="width: 18rem; ">
+            <img class=" imagine w-100 align-self-center" src="{{ $dish->photo }}" alt="{{ $dish->name }}">
                 <div class="card-body">
                 <h5 class="card-title">{{ $dish->name }}</h5>
                 <p class="card-text"><p>{{ $dish->description }}</p></p>
