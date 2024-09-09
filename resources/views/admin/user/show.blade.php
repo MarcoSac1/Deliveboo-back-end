@@ -12,7 +12,7 @@ Showing {{ $user->name }}
                 <h5 class="card-title ">Indirizzo: {{ $user->adress }}</h5>
                 <p>P.Iva: {{ $user->piva }}</p>
                 <p>Mail: {{ $user->email }}</p>
-                <a href="{{ route('pages.show', $user) }}" class="btn btn-primary">Restourant details</a>
+                <a href="{{ route('pages.index', $user) }}" class="btn btn-primary">Return to home</a>
             </div>
         </div>
     </div>
