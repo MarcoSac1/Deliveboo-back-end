@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('page-title')
+{{-- @section('page-title')
 Showing {{ $users->name }}
-@endsection
+@endsection --}}
 @section('main-section')
 <div class="container">
     <div class="row justify-content-center">
