@@ -23,7 +23,8 @@ class DishController extends Controller
      */
     public function create()
     {
-        return view ( 'admin.dishes.create');
+        $users = \App\Models\User::all();
+        return view ( 'admin.dishes.create', compact('users'));
     }
 
     /**
@@ -38,10 +39,13 @@ class DishController extends Controller
             'description'=>'required|string',
             'price'=>'required|numeric',
             'visible'=>'required|boolean',
+            'user_id' =>'required|exists:users,id',
         ]);
         //crea il nuovo piatto
-        Dish::create($validated);
-        return redirect()->route('dishes.index')->with('success', 'Dish created!');
+        $dish = new Dish($validated);
+        $dish->user_id = auth()->id();
+        $dish->save();
+        return redirect()->route('admin.dishes.index')->with('success', 'Dish created!');
     }
 
     /**
@@ -57,7 +61,7 @@ class DishController extends Controller
      */
     public function edit(Dish $dish)
     {
-        return view('admin.dishes.edit'. compact('dish'));
+        return view('admin.dishes.edit', compact('dish'));
     }
 
     /**
