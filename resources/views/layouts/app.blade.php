@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.Deliveboo', 'Deliveboo') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('Deliveboo', 'Deliveboo') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -29,19 +29,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                    {{-- <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            {{-- <a class="nav-link" href="{{ route('restourant') }}">{{ __('Restourant') }}</a> --}}
-                        </li>
-                    </ul>
+                            <a class="nav-link" href="{{ route('/restourant') }}">{{ __('Restourant') }}</a>
+                        </li> --}}
+                    {{-- </ul> --}}
 
                     <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="{{ url('/restourant') }}" class=" mx-3 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Restourant </a>
+                        </li>
                         <li class="nav-item">
                             <a href="{{ url('/create') }}" class=" font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Create</a>
                         </li>
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
+{{-- <-- Right Side Of Navbar --> --}}
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
