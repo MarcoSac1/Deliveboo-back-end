@@ -1,8 +1,9 @@
 <?php
-use App\Http\Controllers\Admin\HomeController as AdminHomeController;
-use App\Http\Controllers\HomeController as GuestHomeController;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\HomeController as GuestHomeController;
+use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,7 @@ Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.ind
 Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
         //Rotte protette
     // Route::get('secret-home', [AdminHomeController::class, 'index'])->name('home');
-
+    Route::resource('orders', OrderController::class);
     }
 );
 
@@ -36,3 +37,6 @@ Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
