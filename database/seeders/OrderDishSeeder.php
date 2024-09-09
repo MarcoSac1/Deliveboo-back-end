@@ -10,8 +10,8 @@ use Illuminate\Database\Seeder;
 
 class OrderDishSeeder extends Seeder
 {
-    public function run(): void
-    {
+
+    public function run(): void{
         // Ottieni tutte le istanze di Dish e Order
         $dishes = Dish::all();
         $orders = Order::all();
@@ -76,10 +76,14 @@ class OrderDishSeeder extends Seeder
         ];
 
 
-        foreach($orderDishes as $orderDish) {
-           main
+
+
+        // Inserisci i dati nel database
+        foreach ($orderDishes as $orderDish) {
             Order_Dish::create($orderDish);
         }
     }
+
+
 }
 

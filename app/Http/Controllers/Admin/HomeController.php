@@ -13,6 +13,12 @@ class HomeController extends Controller{
         $users = User::all();
         return view('admin.user.index',compact('users'));
     }
+
+    public function show(User $users)
+    {
+        //
+        return view('admin.user.show', compact('users'));
+    }
 }
 
 
