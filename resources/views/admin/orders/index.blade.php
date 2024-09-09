@@ -28,7 +28,7 @@
                             <td>{{ $order->total_price }}</td>
                             <td>{{ $order->state }}</td>
                             <td>
-                                <a href="{{ route('admin.orders.show', $order)}}" class="btn btn-primary btn-sm">Show</a>
+                                <a href="{{ route('admin.orders.show', $order)}}" class="btn btn-primary btn-sm"> Show </a>
                                     @csrf
 
                                     <input type="submit" class="btn btn-warning btn-sm" value="Delete">

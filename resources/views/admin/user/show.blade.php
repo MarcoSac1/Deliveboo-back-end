@@ -16,6 +16,7 @@ Showing {{ $user->name }}
             P.Iva: {{ $user->piva }} <br>
             <p class="card-text"> Mail: {{ $user->email }}</p>
             <a href="{{ route('pages.index', $user) }}" class="btn btn-primary">Retourn  to home</a>
+            <a href="{{ route('admin.orders.index', $order) }}" class="btn btn-primary">Order</a>
         </div>
     </div>
 </section>

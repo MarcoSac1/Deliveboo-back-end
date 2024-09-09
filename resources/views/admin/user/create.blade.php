@@ -17,7 +17,7 @@
             </div>
             @endif
             <div class="col-6 px-3">
-                <form action="{{ route ('pages.show') }}" method="POST">
+                <form action="{{ route ('pages.store') }}" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="name">Nome</label>

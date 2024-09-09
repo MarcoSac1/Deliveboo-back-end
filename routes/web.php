@@ -35,6 +35,8 @@ Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
     // Route::get('secret-home', [AdminHomeController::class, 'index'])->name('home');
 
     Route::resource('orders', OrderController::class);
+    Route::resource('show', OrderController::class);
+
     Route::resource('dishes', DishController::class);
     Route::resource('/show', DishController::class);
     Route::resource('/create', DishController::class);
