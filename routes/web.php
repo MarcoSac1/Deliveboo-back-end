@@ -28,7 +28,12 @@ Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.ind
 Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
         //Rotte protette
     // Route::get('secret-home', [AdminHomeController::class, 'index'])->name('home');
+
     Route::resource('orders', OrderController::class);
+
+    // Route::resource('/show',AdminHomeController::class);
+
+Route::resource('orders', OrderController::class);
     }
 );
 

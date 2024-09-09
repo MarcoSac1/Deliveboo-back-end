@@ -12,6 +12,7 @@
                     P.Iva: {{ $user->piva }} <br>
                     <p>Mail: {{ $user->email }}</p>
                     {{-- <a href="{{ route('pages.show', $user) }}" class="btn btn-primary">Restourant detail</a> --}}
+                    <a href="{{ route('pages.show', $user) }}" class="btn btn-primary">Restourant details</a>
                     {{-- <a href="{{ route('pages.edit', $user) }}" class="btn btn-success">Edit</a> --}}
                     {{-- <form action="{{ route('pages.destroy', $user) }}" method="POST" class="d-inline-block animal-destroy"> --}}
                         @method('DELETE')
