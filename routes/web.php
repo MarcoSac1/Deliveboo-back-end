@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\DishController;
+use App\Http\Controllers\Admin\TypologyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,7 @@ Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
     Route::resource('dishes', DishController::class);
     Route::resource('/show', DishController::class);
     Route::resource('/create', DishController::class);
+    Route::resource('typologies', TypologyController::class);
 
     // Route::resource('/show',AdminHomeController::class);
 
