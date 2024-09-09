@@ -78,6 +78,7 @@ class DishController extends Controller
             'visible'=>'required|boolean',
         ]);
         $dish->update($validated);
+        return redirect()->route('admin.dishes.show', $dish);
     }
 
     /**
