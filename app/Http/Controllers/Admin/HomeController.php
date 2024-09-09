@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Typology;
 class HomeController extends Controller{
 
     protected $validationRules = [
@@ -63,7 +64,8 @@ class HomeController extends Controller{
 
     public function create()
     {
-        return view('admin.user.create');
+        $typologies = \App\Models\Typology::all();
+        return view('admin.user.create', compact('typologies'));
     }
 
     public function store(Request $request)
@@ -80,6 +82,9 @@ class HomeController extends Controller{
         $newUser->adress = $data['adress'];
 
         $newUser->save();
+
+        $request->has('typology_id');
+        $newUser->typologies()->sync($request->input('typology_id'));
 
         return redirect()->route('pages.show',$newUser);
     }

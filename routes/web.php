@@ -36,8 +36,8 @@ Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
 
     Route::resource('orders', OrderController::class);
     Route::resource('dishes', DishController::class);
-    Route::resource('/show', DishController::class);
-    Route::resource('/create', DishController::class);
+    Route::resource('show', DishController::class);
+    Route::resource('create', DishController::class);
 
     // Route::resource('/show',AdminHomeController::class);
 
