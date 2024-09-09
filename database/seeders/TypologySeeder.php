@@ -12,48 +12,48 @@ class TypologySeeder extends Seeder
      */
     public function run(): void
     {
-        $restaurantTypes = [
-            [
-                'id' => 7,
-                'name' => 'Ristorante vegetariano'
-            ],
-            [
-                'id' => 8,
-                'name' => 'Tavola calda'
-            ],
-            [
-                'id' => 9,
-                'name' => 'Caffetteria'
-            ],
-            [
-                'id' => 10,
-                'name' => 'Bistrot'
-            ],
-            [
-                'id' => 11,
-                'name' => 'Ristorante Messicano'
-            ],
-            [
-                'id' => 12,
-                'name' => 'Ristorante Indiano'
-            ],
-            [
-                'id' => 13,
-                'name' => 'Ristorante Cinese'
-            ],
-            [
-                'id' => 14,
-                'name' => 'Ristorante Libanese'
-            ],
-            [
-                'id' => 15,
-                'name' => 'Pub'
-            ],
-            [
-                'id' => 16,
-                'name' => 'Enoteca'
-            ],
-        ];
+        $restaurantTypes =[
+        [
+            'id' => 0,
+            'name' => 'Brunch Café'
+        ],
+        [
+            'id' => 1,
+            'name' => 'Gelateria'
+        ],
+        [
+            'id' => 2,
+            'name' => 'Pizzeria'
+        ],
+        [
+            'id' => 3,
+            'name' => 'Ristorante Francese'
+        ],
+        [
+            'id' => 4,
+            'name' => 'Ristorante Giapponese'
+        ],
+        [
+            'id' => 5,
+            'name' => 'Ristorante Greco'
+        ],
+        [
+            'id' => 6,
+            'name' => 'Ristorante Italiano'
+        ],
+        [
+            'id' => 7,
+            'name' => 'Ristorante Thai'
+        ],
+        [
+            'id' => 8,
+            'name' => 'Steakhouse'
+        ],
+        [
+            'id' => 9,
+            'name' => 'Sushi Bar'
+        ],
+    ];
 
         foreach($restaurantTypes as $restaurantType){
             $typology = new Typology();

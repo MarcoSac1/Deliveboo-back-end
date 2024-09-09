@@ -3,7 +3,7 @@
 <div class="row justify-content-center">
     <h1 class=" text-center mb-3">Create a New Dish</h1>
     <div class="col-6">
-        <form  action="{{ route('admin.dish.store') }}" method="POST">
+        <form  action="{{ route('admin.dishes.store') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="name">Name</label>
