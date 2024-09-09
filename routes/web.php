@@ -26,9 +26,9 @@ Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
 
 Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.index');
 Route::get('/show/{user}', [AdminHomeController::class,'show'])->name('pages.show');
+Route::post('/restourant', [AdminHomeController::class, 'store'])->name('pages.store');
 
 Route::get('/create', [AdminHomeController::class,'create'])->name('pages.create');
-Route::post('/restourant', [AdminHomeController::class, 'store'])->name('pages.store');
 
 Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
         //Rotte protette
@@ -36,10 +36,11 @@ Route::middleware('auth')->name('admin.')->prefix('admin/')->group(function(){
 
     Route::resource('orders', OrderController::class);
     Route::resource('dishes', DishController::class);
+    Route::resource('/show', DishController::class);
+    Route::resource('/create', DishController::class);
 
     // Route::resource('/show',AdminHomeController::class);
 
-Route::resource('orders', OrderController::class);
     }
 );
 
