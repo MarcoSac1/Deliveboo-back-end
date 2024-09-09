@@ -33,11 +33,11 @@
                         <li class="nav-item">
                             {{-- <a class="nav-link" href="{{ route('restourant') }}">{{ __('Restourant') }}</a> --}}
                         </li>
-                    </ul>
-
-                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a href="{{ url('/create') }}" class=" font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Create</a>
+                            <a href="{{ url('/restourant') }}" class=" font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 "> Restourant </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/create') }}" class=" font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 "> Create </a>
                         </li>
                     </ul>
 

@@ -50,6 +50,16 @@
                     <input class="form-control form-control-sm mb-2" type="text" placeholder="Adress" aria-label="Adress" id="adress" name="adress" value="{{ old('adress') }}">
                 </div>
 
+                <div class="mb-3">
+                    <label for="typology_id">Type</label>
+                    <select name="typology_id" id="typology_id">
+                        <option value="">Seleziona una categoria</option>
+                        @foreach($typologies as $typology)
+                            <option value="{{ $typology->id }}">{{ $typology->name }}</option>
+                        @endforeach``
+                    </select>
+                </div>
+
                 <div class="mb-3 d-flex justify-content-between py-2 ">
                     <input type="reset" value="Reset fields" class="btn btn-warning">
                     <input type="submit" value="New User" class="btn btn-success">
