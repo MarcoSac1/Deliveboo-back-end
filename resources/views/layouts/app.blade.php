@@ -37,14 +37,14 @@
 
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a href="{{ url('/restourant') }}" class=" mx-3 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Restourant </a>
+                            <a href="{{ url('/restourant') }}" class=" text-dark bg-white text-decoration-none mx-3 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Restourant </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/create') }}" class=" mx-3  font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Create New Restourant</a>
+                            <a href="{{ url('/create') }}" class=" text-dark bg-white text-decoration-none mx-3  font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Create New Restourant</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ url('/admin/dishes') }}" class=" mx-3  font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Dishes</a>
+                            <a href="{{ url('/admin/dishes') }}" class=" text-dark bg-white text-decoration-none mx-3  font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 ">Dishes</a>
                         </li>
                     </ul>
 

@@ -17,7 +17,7 @@
             </ul>
         </div>
         @endif
-        <div class="col-6 ">
+        <div class="col-6 px-3">
             <form action="{{ route ('pages.show') }}" method="POST">
                 @csrf
                 <div class="mb-3">
