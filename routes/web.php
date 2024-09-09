@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
+// Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
 
 Route::get('/restourant', [AdminHomeController::class,'index'])->name('pages.index');
 Route::get('/show/{user}', [AdminHomeController::class,'show'])->name('pages.show');

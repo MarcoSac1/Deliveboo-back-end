@@ -17,7 +17,7 @@
             </div>
             @endif
             <div class="col-6 px-3">
-                <form action="{{ route ('pages.store') }}" method="POST">
+                <form action="{{ route ('pages.show') }}" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="name">Nome</label>
@@ -44,10 +44,10 @@
                         <input class="form-control form-control-sm mb-2" type="number" placeholder="Piva" aria-label="piva" id="piva" name="piva" value="{{ old('piva') }}">
                     </div>
 
-                <div class="mb-3">
-                    <label for="Adress">Adress</label>
-                    <input class="form-control form-control-sm mb-2" type="text" placeholder="Adress" aria-label="Adress" id="adress" name="adress" value="{{ old('adress') }}">
-                </div>
+                    <div class="mb-3">
+                        <label for="Adress">Adress</label>
+                        <input class="form-control form-control-sm mb-2" type="text" placeholder="Adress" aria-label="Adress" id="adress" name="adress" value="{{ old('adress') }}">
+                    </div>
 
                     <div class="mb-3 d-flex justify-content-between py-2 ">
                         <input type="reset" value="Reset fields" class="btn btn-warning">
