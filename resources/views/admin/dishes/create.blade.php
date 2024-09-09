@@ -16,7 +16,7 @@
         </div>
 
         <div class="form-group">
-            <label for="description">Descriptionsss</label>
+            <label for="description">Description</label>
             <textarea name="description" id="description" class="form-control" rows="5" required>{{ old('description') }}</textarea>
         </div>
 
@@ -30,6 +30,14 @@
             <select name="visible" id="visible" class="form-control" required>
                 <option value="1" {{ old('visible') == 1 ? 'selected' : '' }}>Yes</option>
                 <option value="0" {{ old('visible') == 0 ? 'selected' : '' }}>No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="user_id">User</label>
+            <select name="user_id" id="user_id" class="form-control" required>
+                @foreach($users as $user)
+                    <option value="{{ $user->id }}" {{ old('user_id') == $user->id ? 'selected' : '' }}>{{ $user->name }}</option>
+                @endforeach
             </select>
         </div>
 
