@@ -69,13 +69,6 @@ class OrderDishSeeder extends Seeder
                 'quantity' => 2,
             ],
         ];
-
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> cf2f21cd1255199dfa7488c1c8b950c476f3461e
         // Inserisci i dati nel database
         foreach ($orderDishes as $orderDish) {
             Order_Dish::create($orderDish);
